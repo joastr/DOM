@@ -1,3 +1,6 @@
-@charset "utf-8";
+
 /* CSS Document */
 
+.container {
+	padding: 30px 0;
+}
