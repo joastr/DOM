@@ -18,9 +18,6 @@ var list = document.getElementById('Lista');
 	});
 	
 */
-function addEventListener(param) {
-  console.log(param);
-}
 
 var list = document.getElementById('Lista');
 	add = document.getElementById('addElem');
@@ -29,13 +26,10 @@ var list = document.getElementById('Lista');
 
 	add.addEventListener('click', function() {
 		
-		var	newElem = document.createElement('li');
-		var	number = document.getElementsByTagName('li');
-		
-		for (var i=0; i<number.length; i++) {
-			var nb = number[i]
+		var	newElem = document.createElement('li'),
+			number = document.getElementsByTagName('li');
 				
-	    newElem.innerHTML += '<li>item</li>' + nb;}
+	    newElem.innerHTML += 'item ' + number.length;
 		list.appendChild(newElem); 
 	});
 
